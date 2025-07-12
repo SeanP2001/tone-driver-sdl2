@@ -65,27 +65,45 @@ $(function() {
   <div class="headertitle"><div class="title">tone-driver-sdl2 </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_README"></a> <code>tone-driver-sdl2</code> is a simple SDL2-based audio emulator that replicates the ATTiny piezo buzzer's square wave tones. It provides a drop-in replacement for the <code>Sound::note(int n, int octave)</code> function, enabling PC playback of embedded game sounds.</p>
+<div class="textblock"><p ><a class="anchor" id="md_README"></a> <code>tone-driver-sdl2</code> is a simple SDL2-based audio emulator that replicates a piezo buzzer's square wave tones. It provides a drop-in replacement for the <code>Sound::note(int n, int octave)</code> function, enabling PC playback of embedded game sounds.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Features</h1>
 <ul>
-<li>Generates square wave tones matching ATTiny frequency logic</li>
+<li>Generates square wave tones matching ATtiny frequency logic</li>
 <li>Plays game sound effects like <code>highScore()</code>, <code>gameOver()</code>, and <code>eating()</code></li>
 <li>Cross-platform, minimal dependencies (requires SDL2)</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md2"></a>
+Directory Structure</h1>
+<div class="fragment"><div class="line">├── CMakeLists.txt           # Build configuration</div>
+<div class="line">├── docs                     # Project documentation</div>
+<div class="line">│   └── html</div>
+<div class="line">├── Doxyfile</div>
+<div class="line">├── examples</div>
+<div class="line">│   └── test-tone.cpp        # Test by playing notes sequentially</div>
+<div class="line">├── include</div>
+<div class="line">│   ├── ToneDriver.h         # Abstract base interface</div>
+<div class="line">│   └── ToneDriverSDL2.h     # SDL2 implementation header</div>
+<div class="line">├── LICENSE</div>
+<div class="line">├── README.md</div>
+<div class="line">└── src                      # Implementation source files</div>
+<div class="line">    └── ToneDriverSDL2.cpp</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
 Usage</h1>
 <p >Build and run the included test program to hear sample tones:</p>
 <div class="fragment"><div class="line">mkdir build &amp;&amp; cd build</div>
 <div class="line">cmake ..</div>
 <div class="line">make</div>
 <div class="line">./tone_driver_sdl2</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
 Integration</h1>
 <p >Replace the Sound::note method in your game code with the SDL2 implementation for PC testing without hardware.</p>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md5"></a>
 Dependencies</h1>
-<p >SDL2 library (<a href="https://www.libsdl.org/">https://www.libsdl.org/</a>) </p>
+<p >SDL2 library (<a href="https://www.libsdl.org/">https://www.libsdl.org/</a>)</p>
+<h1><a class="anchor" id="autotoc_md6"></a>
+Documentation</h1>
+<p ><a href="https://raw.githack.com/SeanP2001/tone-driver-sdl2/main/docs/html/index.html">View Documentation</a> </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

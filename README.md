@@ -45,7 +45,4 @@ SDL2 library (https://www.libsdl.org/)
 
 ## Documentation
 
-[View Documentation Locally](docs/html/index.html)  
-**Note:** This link works when the repo is cloned locally and Doxygen docs have been generated.
-
-[View Documentation Online](https://seanp2001.github.io/tone-driver-sdl2/)
+[View Documentation](https://raw.githack.com/SeanP2001/tone-driver-sdl2/main/docs/html/index.html)
