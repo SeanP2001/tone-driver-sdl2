@@ -1,0 +1,50 @@
+# Build artifacts
+/build/
+/bin/
+/obj/
+/out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Compiled object files
+*.o
+*.lo
+*.la
+*.al
+*.so
+*.a
+*.dylib
+*.dll
+*.exe
+
+# Editor/IDE specific
+*.swp
+*.swo
+*.DS_Store
+*.idea/
+*.vscode/
+*.vs/
+*.code-workspace
+
+# Backup files
+*~
+*.bak
+*.tmp
+
+# Logs
+*.log
+
+# Generated files
+compile_commands.json
+
+# SDL runtime cache (if any)
+/sdl_cache/
+
+# MacOS-specific
+.DS_Store
+
+# Windows-specific
+Thumbs.db
+
