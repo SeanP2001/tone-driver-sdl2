@@ -43,6 +43,12 @@ Replace the Sound::note method in your game code with the SDL2 implementation fo
 ## Dependencies
 SDL2 library (https://www.libsdl.org/)
 
+Install by running the following command:
+
+```bash
+sudo apt install libsdl2-dev
+```
+
 ## Documentation
 
 [View Documentation](https://raw.githack.com/SeanP2001/tone-driver-sdl2/main/docs/html/index.html)
