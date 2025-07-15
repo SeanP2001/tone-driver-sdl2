@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tone Driver SDL2: include/ToneDriver.h File Reference</title>
+<title>Tone Driver SDL2: include/tone-driver/ToneDriver.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,31 +62,40 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_cc33d6ff8ad176e01bac10fc33794f48.html">tone-driver</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle"><div class="title">ToneDriver.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>Definition of the abstract base class for the <a class="el" href="classToneDriver.html" title="Abstract interface for tone generation across platforms.">ToneDriver</a> interface.  
 <a href="#details">More...</a></p>
-<div class="textblock"><div class="dynheader">
+<div class="textblock"><code>#include &quot;<a class="el" href="NoteName_8h_source.html">NoteName.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for ToneDriver.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="ToneDriver_8h__incl.png" border="0" usemap="#ainclude_2tone-driver_2ToneDriver_8h" alt=""/></div>
+<map name="ainclude_2tone-driver_2ToneDriver_8h" id="ainclude_2tone-driver_2ToneDriver_8h">
+<area shape="rect" title="Definition of the abstract base class for the ToneDriver interface." alt="" coords="5,5,151,47"/>
+<area shape="rect" href="NoteName_8h.html" title="Definition of the NoteName enum." alt="" coords="26,95,130,121"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="ToneDriver_8h__dep__incl.png" border="0" usemap="#ainclude_2ToneDriver_8hdep" alt=""/></div>
-<map name="ainclude_2ToneDriver_8hdep" id="ainclude_2ToneDriver_8hdep">
-<area shape="rect" title="Definition of the abstract base class for the ToneDriver interface." alt="" coords="459,5,613,32"/>
-<area shape="rect" href="ToneDriverSDL2_8h.html" title="Definition of the SDL2 implementation of the ToneDriver interface." alt="" coords="442,80,630,107"/>
-<area shape="rect" href="major-scale_8cpp.html" title="Plays a major scale via ToneDriverSDL2." alt="" coords="5,162,200,189"/>
-<area shape="rect" href="precomputed-frequencies_8cpp.html" title="Looks up the note frequncies in a 2D array and plays the frequency via ToneDriverSDL2...." alt="" coords="224,155,400,196"/>
-<area shape="rect" href="test-frequencies_8cpp.html" title="Sweeps through a range of frequencies and plays them via ToneDriverSDL2." alt="" coords="425,162,647,189"/>
-<area shape="rect" href="test-tone_8cpp.html" title="Tests that every note within the range plays via ToneDriverSDL2." alt="" coords="672,162,848,189"/>
-<area shape="rect" href="ToneDriverSDL2_8cpp.html" title="SDL2 implementation of the ToneDriver interface." alt="" coords="873,162,1047,189"/>
+<div class="center"><img src="ToneDriver_8h__dep__incl.png" border="0" usemap="#ainclude_2tone-driver_2ToneDriver_8hdep" alt=""/></div>
+<map name="ainclude_2tone-driver_2ToneDriver_8hdep" id="ainclude_2tone-driver_2ToneDriver_8hdep">
+<area shape="rect" title="Definition of the abstract base class for the ToneDriver interface." alt="" coords="491,5,637,47"/>
+<area shape="rect" href="ToneDriverSDL2_8h.html" title="Definition of the SDL2 implementation of the ToneDriver interface." alt="" coords="477,95,651,136"/>
+<area shape="rect" href="tone-driver-sdl2_2major-scale_8cpp.html" title="Plays a major scale via ToneDriverSDL2." alt="" coords="5,184,168,225"/>
+<area shape="rect" href="precomputed-frequencies_8cpp.html" title="Looks up the note frequncies in a 2D array and plays the frequency via ToneDriverSDL2...." alt="" coords="193,184,445,225"/>
+<area shape="rect" href="test-frequencies_8cpp.html" title="Sweeps through a range of frequencies and plays them via ToneDriverSDL2." alt="" coords="469,184,659,225"/>
+<area shape="rect" href="test-tone_8cpp.html" title="Tests that every note within the range plays via ToneDriverSDL2." alt="" coords="684,184,847,225"/>
+<area shape="rect" href="ToneDriverSDL2_8cpp.html" title="SDL2 implementation of the ToneDriver interface." alt="" coords="871,184,1027,225"/>
 </map>
 </div>
 </div>
@@ -97,51 +106,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToneDriver.html">ToneDriver</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract interface for tone generation across platforms.  <a href="classToneDriver.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a133274d390ac226cb82aa9d32b98d6ce"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ToneDriver_8h.html#a133274d390ac226cb82aa9d32b98d6ce">Note</a> { <br />
-&#160;&#160;<b>C</b>
-, <b>C_SHARP</b>
-, <b>D</b>
-, <b>D_SHARP</b>
-, <br />
-&#160;&#160;<b>E</b>
-, <b>F</b>
-, <b>F_SHARP</b>
-, <b>G</b>
-, <br />
-&#160;&#160;<b>G_SHARP</b>
-, <b>A</b>
-, <b>A_SHARP</b>
-, <b>B</b>
-<br />
- }</td></tr>
-<tr class="memdesc:a133274d390ac226cb82aa9d32b98d6ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the 12 chromatic musical notes from C to B.  <a href="ToneDriver_8h.html#a133274d390ac226cb82aa9d32b98d6ce">More...</a><br /></td></tr>
-<tr class="separator:a133274d390ac226cb82aa9d32b98d6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Definition of the abstract base class for the <a class="el" href="classToneDriver.html" title="Abstract interface for tone generation across platforms.">ToneDriver</a> interface. </p>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a133274d390ac226cb82aa9d32b98d6ce" name="a133274d390ac226cb82aa9d32b98d6ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a133274d390ac226cb82aa9d32b98d6ce">&#9670;&nbsp;</a></span>Note</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="ToneDriver_8h.html#a133274d390ac226cb82aa9d32b98d6ce">Note</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Represents the 12 chromatic musical notes from C to B. </p>
-<p >Used to reference musical notes semantically rather than by raw index.</p>
-<dl class="section note"><dt>Note</dt><dd>These map directly to integers (0–11) and represent chromatic semitone steps. </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4

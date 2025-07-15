@@ -1,7 +1,7 @@
 /// @file test-frequencies.cpp
 /// @brief Sweeps through a range of frequencies and plays them via ToneDriverSDL2. 
 
-#include "ToneDriverSDL2.h"
+#include "tone-driver-sdl2/ToneDriverSDL2.h"
 #include <iostream>
 
 const int MIN_FREQ = 16;

@@ -1,7 +1,7 @@
 /// @file test-tone.cpp
 /// @brief Tests that every note within the range plays via ToneDriverSDL2.
 
-#include "ToneDriverSDL2.h"
+#include "tone-driver-sdl2/ToneDriverSDL2.h"
 #include <iostream>
 
 const int MIN_OCTAVE = 1;
@@ -21,10 +21,10 @@ int main()
 
     for(int octave = MIN_OCTAVE; octave <= MAX_OCTAVE; ++octave)
     {
-        for (int note = Note::C; note <= Note::B; ++note)
+        for (int note = NoteName::C; note <= NoteName::B; ++note)
         {
-            std::cout << "Playing Note " << note << " Octave " << octave << std::endl;
-            toneDriver.playNote(static_cast<Note>(note), octave, NOTE_DURATION_MS);
+            std::cout << "Playing Note " << toString(static_cast<NoteName>(note)) << " Octave " << octave << std::endl;
+            toneDriver.playNote(static_cast<NoteName>(note), octave, NOTE_DURATION_MS);
             toneDriver.rest(REST_DURATION_MS); 
         }
     }

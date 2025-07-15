@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isvalidnote_0',['isValidNote',['../classToneDriver.html#a2cda74dd5b7967bdf3f647ec06122d12',1,'ToneDriver::isValidNote()'],['../classToneDriverSDL2.html#ad5347b7cf9a3e804e1a68dc6e27c24ba',1,'ToneDriverSDL2::isValidNote()']]]
+  ['isvalidnote_0',['isValidNote',['../classToneDriverSDL2.html#a6eeb1f0cb35358fcad835a95385b3db3',1,'ToneDriverSDL2::isValidNote()'],['../classToneDriver.html#a8eb04ab0a4c2a2b24e5a936e26144a3b',1,'ToneDriver::isValidNote()']]]
 ];

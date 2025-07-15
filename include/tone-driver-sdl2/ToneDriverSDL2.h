@@ -20,7 +20,7 @@ void Sound::note (int n, int octave)
 #define TONE_DRIVER_SDL2_H
 
 #include <SDL2/SDL.h>
-#include "ToneDriver.h"
+#include "tone-driver/ToneDriver.h"
 
 /**
  * @class ToneDriverSDL2
@@ -42,17 +42,17 @@ public:
     /** @copydoc ToneDriver::playFrequency(float, int) */
     void playFrequency(float freq, int durationMs) override;
 
-    /** @copydoc ToneDriver::playNote(Note, int) */
-    void playNote(Note note, int octave) override;
+    /** @copydoc ToneDriver::playNote(NoteName, int) */
+    void playNote(NoteName note, int octave) override;
 
-    /** @copydoc ToneDriver::playNote(Note, int, int) */
-    void playNote(Note note, int octave, int durationMs) override;
+    /** @copydoc ToneDriver::playNote(NoteName, int, int) */
+    void playNote(NoteName note, int octave, int durationMs) override;
 
     /** @copydoc ToneDriver::playChord */
-    void playChord(const Note notes[5], const int octaves[5], int count) override;
+    void playChord(const NoteName notes[5], const int octaves[5], int count) override;
 
     /** @copydoc ToneDriver::playArpeggio */
-    void playArpeggio(const Note notes[5], const int octaves[5], int count, int noteDurationMs = DEFAULT_NOTE_DURATION_MS, int delayMs = DEFAULT_ARPEGGIO_DELAY_MS) override;
+    void playArpeggio(const NoteName notes[5], const int octaves[5], int count, int noteDurationMs = DEFAULT_NOTE_DURATION_MS, int delayMs = DEFAULT_ARPEGGIO_DELAY_MS) override;
 
     /** @copydoc ToneDriver::playArpeggio */
     void stop() override;
@@ -76,7 +76,7 @@ public:
      * @param note Note (0–11).
      * @param octave Octave number (0–6).
      */
-    void setNoteFrequency(Note note, int octave);
+    void setNoteFrequency(NoteName note, int octave);
 
     /**
      * @brief Set the amplitude (volume) of the output tone.
@@ -86,7 +86,7 @@ public:
     void setAmplitude(float amplitude);
 
     /** @copydoc ToneDriver::isValidNote */
-    bool isValidNote(Note note, int octave) override;
+    bool isValidNote(NoteName note, int octave) override;
 
     /** @brief Destructor. Closes SDL audio subsystem. */
     ~ToneDriverSDL2();
@@ -121,7 +121,7 @@ private:
      * 
      * @returns Positive or negative number of semitones between the two pitches.
      */
-    int getSemitonesDiff(Note note1, int octave1, Note note2, int octave2);
+    int getSemitonesDiff(NoteName note1, int octave1, NoteName note2, int octave2);
 
     float currentFrequency = 0.0f;  ///< Currently playing frequency (Hz).
     float currentAmplitude = 0.85f; ///< Current volume (0.0 to 1.0).
@@ -130,7 +130,7 @@ private:
 
     const static int SAMPLE_RATE;   ///< Audio sample rate in Hz.
     const static int REF_FREQ;      ///< Frequency reference (usually A4 = 440Hz).
-    const static Note REF_NOTE;     ///< Reference note (usually A).
+    const static NoteName REF_NOTE; ///< Reference note (usually A).
     const static int REF_OCTAVE;    ///< Octave of reference note (usually 4).
 };
 

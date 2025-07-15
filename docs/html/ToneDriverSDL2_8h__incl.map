@@ -1,5 +1,6 @@
-<map id="include/ToneDriverSDL2.h" name="include/ToneDriverSDL2.h">
-<area shape="rect" id="node1" title="Definition of the SDL2 implementation of the ToneDriver interface." alt="" coords="21,5,209,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,101,107"/>
-<area shape="rect" id="node3" href="$ToneDriver_8h.html" title="Definition of the abstract base class for the ToneDriver interface." alt="" coords="126,80,229,107"/>
+<map id="include/tone&#45;driver&#45;sdl2/ToneDriverSDL2.h" name="include/tone&#45;driver&#45;sdl2/ToneDriverSDL2.h">
+<area shape="rect" id="node1" title="Definition of the SDL2 implementation of the ToneDriver interface." alt="" coords="47,5,220,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,101,121"/>
+<area shape="rect" id="node3" href="$ToneDriver_8h.html" title="Definition of the abstract base class for the ToneDriver interface." alt="" coords="125,95,304,121"/>
+<area shape="rect" id="node4" href="$NoteName_8h.html" title="Definition of the NoteName enum." alt="" coords="163,169,267,196"/>
 </map>

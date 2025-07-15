@@ -80,14 +80,27 @@ Directory Structure</h1>
 <div class="line">│   └── html</div>
 <div class="line">├── Doxyfile</div>
 <div class="line">├── examples</div>
-<div class="line">│   └── test-tone.cpp        # Test by playing notes sequentially</div>
+<div class="line">│   ├── music-driver                      # Examples of how to use the music-driver</div>
+<div class="line">│   └── tone-driver-sdl2                  # Examples of how to use the tone-driver (cross-platform)</div>
+<div class="line">│       ├── major-scale.cpp</div>
+<div class="line">│       ├── precomputed-frequencies.cpp</div>
+<div class="line">│       ├── test-frequencies.cpp</div>
+<div class="line">│       └── test-tone.cpp</div>
 <div class="line">├── include</div>
-<div class="line">│   ├── ToneDriver.h         # Abstract base interface</div>
-<div class="line">│   └── ToneDriverSDL2.h     # SDL2 implementation header</div>
+<div class="line">│   ├── music-components</div>
+<div class="line">│   ├── music-driver</div>
+<div class="line">│   ├── NoteName.h</div>
+<div class="line">│   ├── tone-driver              # Abstract base interface</div>
+<div class="line">│   │   └── ToneDriver.h</div>
+<div class="line">│   └── tone-driver-sdl2         # SDL2 implementation</div>
+<div class="line">│       └── ToneDriverSDL2.h</div>
 <div class="line">├── LICENSE</div>
 <div class="line">├── README.md</div>
-<div class="line">└── src                      # Implementation source files</div>
-<div class="line">    └── ToneDriverSDL2.cpp</div>
+<div class="line">└── src                          # Implementation source files</div>
+<div class="line">    ├── music-components</div>
+<div class="line">    ├── music-driver</div>
+<div class="line">    └── tone-driver-sdl2</div>
+<div class="line">        └── ToneDriverSDL2.cpp</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
 Usage</h1>
 <p >Build and run the included test program to hear sample tones:</p>

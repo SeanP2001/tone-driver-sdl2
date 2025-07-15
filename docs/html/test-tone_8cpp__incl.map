@@ -1,7 +1,8 @@
-<map id="examples/test&#45;tone.cpp" name="examples/test&#45;tone.cpp">
-<area shape="rect" id="node1" title="Tests that every note within the range plays via ToneDriverSDL2." alt="" coords="93,5,269,32"/>
-<area shape="rect" id="node2" href="$ToneDriverSDL2_8h.html" title="Definition of the SDL2 implementation of the ToneDriver interface." alt="" coords="46,80,183,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="208,80,288,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,155,101,181"/>
-<area shape="rect" id="node4" href="$ToneDriver_8h.html" title="Definition of the abstract base class for the ToneDriver interface." alt="" coords="126,155,229,181"/>
+<map id="examples/tone&#45;driver&#45;sdl2/test&#45;tone.cpp" name="examples/tone&#45;driver&#45;sdl2/test&#45;tone.cpp">
+<area shape="rect" id="node1" title="Tests that every note within the range plays via ToneDriverSDL2." alt="" coords="133,5,296,47"/>
+<area shape="rect" id="node2" href="$ToneDriverSDL2_8h.html" title="Definition of the SDL2 implementation of the ToneDriver interface." alt="" coords="33,95,233,136"/>
+<area shape="rect" id="node6" title=" " alt="" coords="257,102,337,129"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,184,101,211"/>
+<area shape="rect" id="node4" href="$ToneDriver_8h.html" title="Definition of the abstract base class for the ToneDriver interface." alt="" coords="125,184,304,211"/>
+<area shape="rect" id="node5" href="$NoteName_8h.html" title="Definition of the NoteName enum." alt="" coords="163,259,267,285"/>
 </map>

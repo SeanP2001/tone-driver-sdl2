@@ -4,29 +4,7 @@
 #ifndef TONE_DRIVER_H
 #define TONE_DRIVER_H
 
-
-/**
- * @enum Note
- * @brief Represents the 12 chromatic musical notes from C to B.
- * 
- * Used to reference musical notes semantically rather than by raw index.
- * 
- * @note These map directly to integers (0–11) and represent chromatic semitone steps.
- */
-enum Note {
-    C,
-    C_SHARP,
-    D,
-    D_SHARP,
-    E,
-    F,
-    F_SHARP,
-    G,
-    G_SHARP,
-    A,
-    A_SHARP,
-    B
-};
+#include "NoteName.h"
 
 /**
  * @class ToneDriver
@@ -62,19 +40,19 @@ public:
     /**
      * @brief Play a musical note at a specific octave indefinitely.
      * 
-     * @param note Note value (0–11) using the Note enum.
+     * @param note Note value (0–11) using the NoteName enum.
      * @param octave Octave number (0–6).
      */
-    virtual void playNote(Note note, int octave) = 0;
+    virtual void playNote(NoteName note, int octave) = 0;
 
     /**
      * @brief Play a musical note for a specific duration.
      * 
-     * @param note Note value (0–11) using the Note enum.
+     * @param note Note value (0–11) using the NoteName enum.
      * @param octave Octave number (0–6).
      * @param durationMs Note duration in milliseconds.
      */
-    virtual void playNote(Note note, int octave, int durationMs) = 0;
+    virtual void playNote(NoteName note, int octave, int durationMs) = 0;
 
     /**
      * @brief Play a chord consisting of up to MAX_POLYPHONY notes.
@@ -85,7 +63,7 @@ public:
      * 
      * @note The actual implementation may simulate chords as fast arpeggios.
      */
-    virtual void playChord(const Note notes[5], const int octaves[5], int count) = 0;
+    virtual void playChord(const NoteName notes[5], const int octaves[5], int count) = 0;
 
     /**
      * @brief Play a sequence of notes in succession to simulate an arpeggio.
@@ -96,7 +74,7 @@ public:
      * @param noteDurationMs Duration of each note in milliseconds.
      * @param delayMs Delay between each note in milliseconds. 
      */
-    virtual void playArpeggio(const Note notes[5], const int octaves[5], int count, int noteDurationMs = DEFAULT_NOTE_DURATION_MS, int delayMs = DEFAULT_ARPEGGIO_DELAY_MS) = 0;
+    virtual void playArpeggio(const NoteName notes[5], const int octaves[5], int count, int noteDurationMs = DEFAULT_NOTE_DURATION_MS, int delayMs = DEFAULT_ARPEGGIO_DELAY_MS) = 0;
 
     /**
      * @brief Immediately stop playing any current tone.
@@ -125,7 +103,7 @@ public:
      * 
      * @return true if the note is valid, false otherwise.
      */
-    virtual bool isValidNote(Note note, int octave) = 0;
+    virtual bool isValidNote(NoteName note, int octave) = 0;
 
     /**
      * @brief Virtual default destructor for the ToneDriver interface.

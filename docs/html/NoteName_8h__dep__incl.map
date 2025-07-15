@@ -1,0 +1,10 @@
+<map id="include/NoteName.h" name="include/NoteName.h">
+<area shape="rect" id="node1" title="Definition of the NoteName enum." alt="" coords="487,5,641,32"/>
+<area shape="rect" id="node2" href="$ToneDriver_8h.html" title="Definition of the abstract base class for the ToneDriver interface." alt="" coords="491,80,637,121"/>
+<area shape="rect" id="node3" href="$ToneDriverSDL2_8h.html" title="Definition of the SDL2 implementation of the ToneDriver interface." alt="" coords="477,169,651,211"/>
+<area shape="rect" id="node4" href="$tone-driver-sdl2_2major-scale_8cpp.html" title="Plays a major scale via ToneDriverSDL2." alt="" coords="5,259,168,300"/>
+<area shape="rect" id="node5" href="$precomputed-frequencies_8cpp.html" title="Looks up the note frequncies in a 2D array and plays the frequency via ToneDriverSDL2...." alt="" coords="193,259,445,300"/>
+<area shape="rect" id="node6" href="$test-frequencies_8cpp.html" title="Sweeps through a range of frequencies and plays them via ToneDriverSDL2." alt="" coords="469,259,659,300"/>
+<area shape="rect" id="node7" href="$test-tone_8cpp.html" title="Tests that every note within the range plays via ToneDriverSDL2." alt="" coords="684,259,847,300"/>
+<area shape="rect" id="node8" href="$ToneDriverSDL2_8cpp.html" title="SDL2 implementation of the ToneDriver interface." alt="" coords="871,259,1027,300"/>
+</map>

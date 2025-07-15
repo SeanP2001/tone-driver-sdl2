@@ -16,14 +16,27 @@
 │   └── html
 ├── Doxyfile
 ├── examples
-│   └── test-tone.cpp        # Test by playing notes sequentially
+│   ├── music-driver                      # Examples of how to use the music-driver
+│   └── tone-driver-sdl2                  # Examples of how to use the tone-driver (cross-platform)
+│       ├── major-scale.cpp
+│       ├── precomputed-frequencies.cpp
+│       ├── test-frequencies.cpp
+│       └── test-tone.cpp
 ├── include
-│   ├── ToneDriver.h         # Abstract base interface
-│   └── ToneDriverSDL2.h     # SDL2 implementation header
+│   ├── music-components
+│   ├── music-driver
+│   ├── NoteName.h
+│   ├── tone-driver              # Abstract base interface
+│   │   └── ToneDriver.h
+│   └── tone-driver-sdl2         # SDL2 implementation
+│       └── ToneDriverSDL2.h
 ├── LICENSE
 ├── README.md
-└── src                      # Implementation source files
-    └── ToneDriverSDL2.cpp
+└── src                          # Implementation source files
+    ├── music-components
+    ├── music-driver
+    └── tone-driver-sdl2
+        └── ToneDriverSDL2.cpp
 ```
 
 ## Usage

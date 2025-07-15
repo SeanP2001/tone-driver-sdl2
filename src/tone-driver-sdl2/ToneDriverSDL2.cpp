@@ -2,11 +2,11 @@
 /// @brief SDL2 implementation of the ToneDriver interface.
 
 #include <iostream>   
-#include "ToneDriverSDL2.h"
+#include "tone-driver-sdl2/ToneDriverSDL2.h"
 
 const int ToneDriverSDL2::SAMPLE_RATE = 44100;
 const int ToneDriverSDL2::REF_FREQ = 440;
-const Note ToneDriverSDL2::REF_NOTE = A;
+const NoteName ToneDriverSDL2::REF_NOTE = A;
 const int ToneDriverSDL2::REF_OCTAVE = 4;
 
 
@@ -47,7 +47,7 @@ void ToneDriverSDL2::playFrequency(float freq, int durationMs)
     stopAfter(durationMs);  // Stop audio playback after a given duration
 }
 
-void ToneDriverSDL2::playNote(Note note, int octave)
+void ToneDriverSDL2::playNote(NoteName note, int octave)
 {
     if (isValidNote(note, octave))
     {
@@ -57,7 +57,7 @@ void ToneDriverSDL2::playNote(Note note, int octave)
     }
 }
 
-void ToneDriverSDL2::playNote(Note note, int octave, int durationMs)
+void ToneDriverSDL2::playNote(NoteName note, int octave, int durationMs)
 {  
     if (isValidNote(note, octave))
     {
@@ -68,12 +68,12 @@ void ToneDriverSDL2::playNote(Note note, int octave, int durationMs)
     }
 }
 
-void ToneDriverSDL2::playChord(const Note notes[MAX_POLYPHONY], const int octaves[MAX_POLYPHONY], int count)
+void ToneDriverSDL2::playChord(const NoteName notes[MAX_POLYPHONY], const int octaves[MAX_POLYPHONY], int count)
 {
     playArpeggio(notes, octaves, count, DEFAULT_CHORD_ARPEGGIO_DELAY_MS);
 }
 
-void ToneDriverSDL2::playArpeggio(const Note notes[MAX_POLYPHONY], const int octaves[MAX_POLYPHONY], int count, int noteDurationMs, int delayMs)
+void ToneDriverSDL2::playArpeggio(const NoteName notes[MAX_POLYPHONY], const int octaves[MAX_POLYPHONY], int count, int noteDurationMs, int delayMs)
 {
     if(count > 0 && count <= MAX_POLYPHONY)
     {
@@ -125,7 +125,7 @@ void ToneDriverSDL2::generateSquareWave(Uint8* stream, int len)
     }
 }
 
-int ToneDriverSDL2::getSemitonesDiff(Note note1, int octave1, Note note2, int octave2)
+int ToneDriverSDL2::getSemitonesDiff(NoteName note1, int octave1, NoteName note2, int octave2)
 {
     return (note2 + (12 * octave2)) - (note1 + (12 * octave1));
 }
@@ -135,7 +135,7 @@ void ToneDriverSDL2::setNoteFrequency(float freq)
     currentFrequency = freq;
 }
 
-void ToneDriverSDL2::setNoteFrequency(Note note, int octave)
+void ToneDriverSDL2::setNoteFrequency(NoteName note, int octave)
 {
     // should isValidNote be happening in here rather than in playNote?
     currentFrequency = REF_FREQ * pow(2, getSemitonesDiff(REF_NOTE, REF_OCTAVE, note, octave) / 12.0);
@@ -148,7 +148,7 @@ void ToneDriverSDL2::setAmplitude(float amplitude)
     currentAmplitude = amplitude;
 }
 
-bool ToneDriverSDL2::isValidNote(Note note, int octave)
+bool ToneDriverSDL2::isValidNote(NoteName note, int octave)
 {
     if (note < C || note > B) {
         std::cerr << note << " is not a valid note! Notes range from 0 to 11 (C to B)" << std::endl;

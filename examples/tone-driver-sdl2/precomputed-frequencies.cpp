@@ -2,7 +2,7 @@
 /// @brief Looks up the note frequncies in a 2D array and plays the frequency via ToneDriverSDL2. Useful for reducing compute overhead.
 
 
-#include "ToneDriverSDL2.h"
+#include "tone-driver-sdl2/ToneDriverSDL2.h"
 #include <iostream>
 
 const int MIN_OCTAVE = 1;
@@ -35,9 +35,9 @@ int main()
 
     for(int octave = MIN_OCTAVE; octave <= MAX_OCTAVE; ++octave)
     {
-        for (int note = Note::C; note <= Note::B; ++note)
+        for (int note = NoteName::C; note <= NoteName::B; ++note)
         {
-            std::cout << "Playing Note " << note << " Octave " << octave << " (" << frequencies[note][octave] << " Hz)" << std::endl;
+            std::cout << "Playing Note " << toString(static_cast<NoteName>(note)) << " Octave " << octave << " (" << frequencies[note][octave] << " Hz)" << std::endl;
             toneDriver.playFrequency(frequencies[note][octave], NOTE_DURATION_MS);
             toneDriver.rest(REST_DURATION_MS); 
         }
