@@ -21,9 +21,9 @@ int main()
 
     for(int octave = MIN_OCTAVE; octave <= MAX_OCTAVE; ++octave)
     {
-        for (int note = NoteName::C; note <= NoteName::B; ++note)
+        for (int note = int(NoteName::C); note <= int(NoteName::B); ++note)
         {
-            std::cout << "Playing Note " << toString(static_cast<NoteName>(note)) << " Octave " << octave << std::endl;
+            std::cout << "Playing Note " << noteNameToString(static_cast<NoteName>(note)) << " Octave " << octave << std::endl;
             toneDriver.playNote(static_cast<NoteName>(note), octave, NOTE_DURATION_MS);
             toneDriver.rest(REST_DURATION_MS); 
         }

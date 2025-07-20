@@ -1,10 +1,10 @@
 var indexSectionsWithContent =
 {
-  0: "dimnprst~",
-  1: "t",
-  2: "mnpt",
-  3: "iprst~",
-  4: "dm",
+  0: "cdgikmnoprst~",
+  1: "cknt",
+  2: "ckmnpt",
+  3: "cginoprst~",
+  4: "dmn",
   5: "n",
   6: "t"
 };

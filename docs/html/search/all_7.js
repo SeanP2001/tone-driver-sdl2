@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['test_2dfrequencies_2ecpp_0',['test-frequencies.cpp',['../test-frequencies_8cpp.html',1,'']]],
-  ['test_2dtone_2ecpp_1',['test-tone.cpp',['../test-tone_8cpp.html',1,'']]],
-  ['tone_2ddriver_2dsdl2_2',['tone-driver-sdl2',['../index.html',1,'']]],
-  ['tonedriver_3',['ToneDriver',['../classToneDriver.html',1,'']]],
-  ['tonedriver_2eh_4',['ToneDriver.h',['../ToneDriver_8h.html',1,'']]],
-  ['tonedriversdl2_5',['ToneDriverSDL2',['../classToneDriverSDL2.html',1,'ToneDriverSDL2'],['../classToneDriverSDL2.html#ad77ce131d331f97255804576334b2530',1,'ToneDriverSDL2::ToneDriverSDL2()']]],
-  ['tonedriversdl2_2ecpp_6',['ToneDriverSDL2.cpp',['../ToneDriverSDL2_8cpp.html',1,'']]],
-  ['tonedriversdl2_2eh_7',['ToneDriverSDL2.h',['../ToneDriverSDL2_8h.html',1,'']]],
-  ['tostring_8',['toString',['../NoteName_8h.html#aaf548576600393cb834003a7deb5ea0f',1,'NoteName.h']]]
+  ['operator_21_3d_0',['operator!=',['../classNote.html#ab4a4b0448356fddf232f40ae42bf2fd9',1,'Note']]],
+  ['operator_2b_1',['operator+',['../classNote.html#ad4f32c3dc2c526329687e97778f0081d',1,'Note']]],
+  ['operator_2b_2b_2',['operator++',['../classNote.html#a224b5c43b6fa9bd6987f76e37235078f',1,'Note::operator++()'],['../classNote.html#a515201c64b3985c90fbb5e4015fbee6a',1,'Note::operator++(int)']]],
+  ['operator_2b_3d_3',['operator+=',['../classNote.html#a62812f0d43b32f2d68fe0b25df72ed11',1,'Note']]],
+  ['operator_2d_4',['operator-',['../classNote.html#a9475af651304629ba76b9ede60d7ecf1',1,'Note']]],
+  ['operator_2d_2d_5',['operator--',['../classNote.html#a123cf770c7aca7ac45941cb2fa871c6a',1,'Note::operator--()'],['../classNote.html#a8dd255af9dcd10edf3c09e46bd9937ac',1,'Note::operator--(int)']]],
+  ['operator_2d_3d_6',['operator-=',['../classNote.html#a6df84cd0c8837bc7d2cef1067759ae05',1,'Note']]],
+  ['operator_3d_3d_7',['operator==',['../classNote.html#a33a761e992a7af269e22232bbabdb372',1,'Note']]]
 ];

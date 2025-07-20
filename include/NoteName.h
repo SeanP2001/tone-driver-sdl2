@@ -12,18 +12,18 @@
  * 
  * @note These map directly to integers (0–11) and represent chromatic semitone steps.
  */
-enum NoteName {
+enum class NoteName {
     C,
-    C_SHARP,
+    CSharp,
     D,
-    D_SHARP,
+    DSharp,
     E,
     F,
-    F_SHARP,
+    FSharp,
     G,
-    G_SHARP,
+    GSharp,
     A,
-    A_SHARP,
+    ASharp,
     B
 };
 
@@ -33,21 +33,21 @@ enum NoteName {
  * @param note The NoteName enum value.
  * @return A pointer to a string literal representing the note name.
  */
-inline const char* toString(NoteName note) {
+inline const char* noteNameToString(NoteName note) {
     switch (note) {
-        case C:       return "C";
-        case C_SHARP: return "C#/Db";
-        case D:       return "D";
-        case D_SHARP: return "D#/Eb";
-        case E:       return "E";
-        case F:       return "F";
-        case F_SHARP: return "F#/Gb";
-        case G:       return "G";
-        case G_SHARP: return "G#/Ab";
-        case A:       return "A";
-        case A_SHARP: return "A#/Bb";
-        case B:       return "B";
-        default:      return "?";
+        case NoteName::C:       return "C";
+        case NoteName::CSharp:  return "C#/Db";
+        case NoteName::D:       return "D";
+        case NoteName::DSharp:  return "D#/Eb";
+        case NoteName::E:       return "E";
+        case NoteName::F:       return "F";
+        case NoteName::FSharp:  return "F#/Gb";
+        case NoteName::G:       return "G";
+        case NoteName::GSharp:  return "G#/Ab";
+        case NoteName::A:       return "A";
+        case NoteName::ASharp:  return "A#/Bb";
+        case NoteName::B:       return "B";
+        default:                return "?";
     }
 }
 

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['rest_0',['rest',['../classToneDriverSDL2.html#acda5a101abb87ce276597f4217b0e09f',1,'ToneDriverSDL2::rest()'],['../classToneDriver.html#a776d3767c7ed6644c2c7a4d5af32fa55',1,'ToneDriver::rest()']]]
+  ['major_2dscale_2ecpp_0',['major-scale.cpp',['../music-driver_2major-scale_8cpp.html',1,'(Global Namespace)'],['../tone-driver-sdl2_2major-scale_8cpp.html',1,'(Global Namespace)']]],
+  ['max_5foctave_1',['MAX_OCTAVE',['../classNote.html#ae2cdc1a0a2f339ede8d250ba1d23bdf6',1,'Note::MAX_OCTAVE()'],['../classToneDriver.html#a71ae57fe71748200faf84328819d79f6',1,'ToneDriver::MAX_OCTAVE()']]],
+  ['max_5fpolyphony_2',['MAX_POLYPHONY',['../classToneDriver.html#ade94462f8807f3361879262131ef888e',1,'ToneDriver']]]
 ];

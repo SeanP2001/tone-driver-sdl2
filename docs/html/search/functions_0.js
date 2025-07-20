@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isvalidnote_0',['isValidNote',['../classToneDriverSDL2.html#a6eeb1f0cb35358fcad835a95385b3db3',1,'ToneDriverSDL2::isValidNote()'],['../classToneDriver.html#a8eb04ab0a4c2a2b24e5a936e26144a3b',1,'ToneDriver::isValidNote()']]]
+  ['change_0',['change',['../classNote.html#ae38f836d5c99b3e9e8985f472656c51c',1,'Note']]]
 ];

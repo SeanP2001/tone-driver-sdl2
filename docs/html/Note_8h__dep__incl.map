@@ -1,0 +1,6 @@
+<map id="include/music&#45;components/Note.h" name="include/music&#45;components/Note.h">
+<area shape="rect" id="node1" title="Definition of the Note class which represents a musical note with a pitch class and octave." alt="" coords="109,5,307,47"/>
+<area shape="rect" id="node2" href="$Chord_8h.html" title="Definition of the Chord class." alt="" coords="5,95,203,136"/>
+<area shape="rect" id="node4" href="$Note_8cpp.html" title="Implementation of the Note class." alt="" coords="227,95,397,136"/>
+<area shape="rect" id="node3" href="$Chord_8cpp.html" title="Implementation of the Chord class." alt="" coords="19,184,189,225"/>
+</map>

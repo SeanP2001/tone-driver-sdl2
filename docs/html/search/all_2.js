@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['major_2dscale_2ecpp_0',['major-scale.cpp',['../music-driver_2major-scale_8cpp.html',1,'(Global Namespace)'],['../tone-driver-sdl2_2major-scale_8cpp.html',1,'(Global Namespace)']]],
-  ['max_5foctave_1',['MAX_OCTAVE',['../classToneDriver.html#a71ae57fe71748200faf84328819d79f6',1,'ToneDriver']]],
-  ['max_5fpolyphony_2',['MAX_POLYPHONY',['../classToneDriver.html#ade94462f8807f3361879262131ef888e',1,'ToneDriver']]]
+  ['getnotename_0',['getNoteName',['../classNote.html#a8ca8fad31e8fc5e5216827cec67a8c50',1,'Note']]],
+  ['getnotenamestring_1',['getNoteNameString',['../classNote.html#ab5ea5ae7cb641df9c9a4e550d6796a1b',1,'Note']]],
+  ['getoctave_2',['getOctave',['../classNote.html#a3f49713286432279c2b937563e1e980a',1,'Note']]]
 ];

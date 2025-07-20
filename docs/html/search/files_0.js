@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['major_2dscale_2ecpp_0',['major-scale.cpp',['../music-driver_2major-scale_8cpp.html',1,'(Global Namespace)'],['../tone-driver-sdl2_2major-scale_8cpp.html',1,'(Global Namespace)']]]
+  ['chord_2ecpp_0',['Chord.cpp',['../Chord_8cpp.html',1,'']]],
+  ['chord_2eh_1',['Chord.h',['../Chord_8h.html',1,'']]]
 ];

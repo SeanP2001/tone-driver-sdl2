@@ -80,14 +80,20 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="NoteName_8h__dep__incl.png" border="0" usemap="#ainclude_2NoteName_8hdep" alt=""/></div>
 <map name="ainclude_2NoteName_8hdep" id="ainclude_2NoteName_8hdep">
-<area shape="rect" title="Definition of the NoteName enum." alt="" coords="487,5,641,32"/>
-<area shape="rect" href="ToneDriver_8h.html" title="Definition of the abstract base class for the ToneDriver interface." alt="" coords="491,80,637,121"/>
-<area shape="rect" href="ToneDriverSDL2_8h.html" title="Definition of the SDL2 implementation of the ToneDriver interface." alt="" coords="477,169,651,211"/>
-<area shape="rect" href="tone-driver-sdl2_2major-scale_8cpp.html" title="Plays a major scale via ToneDriverSDL2." alt="" coords="5,259,168,300"/>
-<area shape="rect" href="precomputed-frequencies_8cpp.html" title="Looks up the note frequncies in a 2D array and plays the frequency via ToneDriverSDL2...." alt="" coords="193,259,445,300"/>
-<area shape="rect" href="test-frequencies_8cpp.html" title="Sweeps through a range of frequencies and plays them via ToneDriverSDL2." alt="" coords="469,259,659,300"/>
-<area shape="rect" href="test-tone_8cpp.html" title="Tests that every note within the range plays via ToneDriverSDL2." alt="" coords="684,259,847,300"/>
-<area shape="rect" href="ToneDriverSDL2_8cpp.html" title="SDL2 implementation of the ToneDriver interface." alt="" coords="871,259,1027,300"/>
+<area shape="rect" title="Definition of the NoteName enum." alt="" coords="328,5,483,32"/>
+<area shape="rect" href="Note_8h.html" title="Definition of the Note class which represents a musical note with a pitch class and octave." alt="" coords="209,80,407,121"/>
+<area shape="rect" href="ToneDriver_8h.html" title="Definition of the abstract base class for the ToneDriver interface." alt="" coords="431,80,577,121"/>
+<area shape="rect" href="Chord_8h.html" title="Definition of the Chord class." alt="" coords="5,169,203,211"/>
+<area shape="rect" href="Note_8cpp.html" title="Implementation of the Note class." alt="" coords="227,169,397,211"/>
+<area shape="rect" href="Chord_8cpp.html" title="Implementation of the Chord class." alt="" coords="19,259,189,300"/>
+<area shape="rect" href="MusicDriver_8h_source.html" title=" " alt="" coords="424,169,579,211"/>
+<area shape="rect" href="ToneDriverSDL2_8h.html" title="Definition of the SDL2 implementation of the ToneDriver interface." alt="" coords="861,169,1035,211"/>
+<area shape="rect" href="music-driver_2major-scale_8cpp.html" title="Plays a major scale via MusicDriver." alt="" coords="315,259,487,300"/>
+<area shape="rect" href="tone-driver-sdl2_2major-scale_8cpp.html" title="Plays a major scale via ToneDriverSDL2." alt="" coords="512,259,675,300"/>
+<area shape="rect" href="precomputed-frequencies_8cpp.html" title="Looks up the note frequncies in a 2D array and plays the frequency via ToneDriverSDL2...." alt="" coords="699,259,951,300"/>
+<area shape="rect" href="test-frequencies_8cpp.html" title="Sweeps through a range of frequencies and plays them via ToneDriverSDL2." alt="" coords="975,259,1166,300"/>
+<area shape="rect" href="test-tone_8cpp.html" title="Tests that every note within the range plays via ToneDriverSDL2." alt="" coords="1191,259,1353,300"/>
+<area shape="rect" href="ToneDriverSDL2_8cpp.html" title="SDL2 implementation of the ToneDriver interface." alt="" coords="1378,259,1534,300"/>
 </map>
 </div>
 </div>
@@ -95,20 +101,20 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a122c4360c4b527933164c2b3c87803cf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NoteName_8h.html#a122c4360c4b527933164c2b3c87803cf">NoteName</a> { <br />
+<tr class="memitem:a122c4360c4b527933164c2b3c87803cf"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NoteName_8h.html#a122c4360c4b527933164c2b3c87803cf">NoteName</a> { <br />
 &#160;&#160;<b>C</b>
-, <b>C_SHARP</b>
+, <b>CSharp</b>
 , <b>D</b>
-, <b>D_SHARP</b>
+, <b>DSharp</b>
 , <br />
 &#160;&#160;<b>E</b>
 , <b>F</b>
-, <b>F_SHARP</b>
+, <b>FSharp</b>
 , <b>G</b>
 , <br />
-&#160;&#160;<b>G_SHARP</b>
+&#160;&#160;<b>GSharp</b>
 , <b>A</b>
-, <b>A_SHARP</b>
+, <b>ASharp</b>
 , <b>B</b>
 <br />
  }</td></tr>
@@ -117,9 +123,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aaf548576600393cb834003a7deb5ea0f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NoteName_8h.html#aaf548576600393cb834003a7deb5ea0f">toString</a> (<a class="el" href="NoteName_8h.html#a122c4360c4b527933164c2b3c87803cf">NoteName</a> note)</td></tr>
-<tr class="memdesc:aaf548576600393cb834003a7deb5ea0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a NoteName enum to a const char* string literal.  <a href="NoteName_8h.html#aaf548576600393cb834003a7deb5ea0f">More...</a><br /></td></tr>
-<tr class="separator:aaf548576600393cb834003a7deb5ea0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b51bbff1739a8aaa467a3b24cc6652c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NoteName_8h.html#a4b51bbff1739a8aaa467a3b24cc6652c">noteNameToString</a> (<a class="el" href="NoteName_8h.html#a122c4360c4b527933164c2b3c87803cf">NoteName</a> note)</td></tr>
+<tr class="memdesc:a4b51bbff1739a8aaa467a3b24cc6652c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a NoteName enum to a const char* string literal.  <a href="NoteName_8h.html#a4b51bbff1739a8aaa467a3b24cc6652c">More...</a><br /></td></tr>
+<tr class="separator:a4b51bbff1739a8aaa467a3b24cc6652c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Definition of the NoteName enum. </p>
@@ -129,11 +135,19 @@ Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="NoteName_8h.html#a122c4360c4b527933164c2b3c87803cf">NoteName</a></td>
+          <td class="memname">enum class <a class="el" href="NoteName_8h.html#a122c4360c4b527933164c2b3c87803cf">NoteName</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Represents the 12 chromatic musical notes from C to B. </p>
@@ -143,8 +157,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aaf548576600393cb834003a7deb5ea0f" name="aaf548576600393cb834003a7deb5ea0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf548576600393cb834003a7deb5ea0f">&#9670;&nbsp;</a></span>toString()</h2>
+<a id="a4b51bbff1739a8aaa467a3b24cc6652c" name="a4b51bbff1739a8aaa467a3b24cc6652c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b51bbff1739a8aaa467a3b24cc6652c">&#9670;&nbsp;</a></span>noteNameToString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +167,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char * toString </td>
+          <td class="memname">const char * noteNameToString </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="NoteName_8h.html#a122c4360c4b527933164c2b3c87803cf">NoteName</a>&#160;</td>
           <td class="paramname"><em>note</em></td><td>)</td>

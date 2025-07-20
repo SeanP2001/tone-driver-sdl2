@@ -6,7 +6,7 @@
 
 const int ToneDriverSDL2::SAMPLE_RATE = 44100;
 const int ToneDriverSDL2::REF_FREQ = 440;
-const NoteName ToneDriverSDL2::REF_NOTE = A;
+const NoteName ToneDriverSDL2::REF_NOTE = NoteName::A;
 const int ToneDriverSDL2::REF_OCTAVE = 4;
 
 
@@ -127,7 +127,7 @@ void ToneDriverSDL2::generateSquareWave(Uint8* stream, int len)
 
 int ToneDriverSDL2::getSemitonesDiff(NoteName note1, int octave1, NoteName note2, int octave2)
 {
-    return (note2 + (12 * octave2)) - (note1 + (12 * octave1));
+    return (int(note2) + (12 * octave2)) - (int(note1) + (12 * octave1));
 }
 
 void ToneDriverSDL2::setNoteFrequency(float freq)
@@ -150,8 +150,8 @@ void ToneDriverSDL2::setAmplitude(float amplitude)
 
 bool ToneDriverSDL2::isValidNote(NoteName note, int octave)
 {
-    if (note < C || note > B) {
-        std::cerr << note << " is not a valid note! Notes range from 0 to 11 (C to B)" << std::endl;
+    if (note < NoteName::C || note > NoteName::B) {
+        std::cerr << int(note) << " is not a valid note! Notes range from 0 to 11 (C to B)" << std::endl;
         return false;
     }
     if (octave < 0 || octave > MAX_OCTAVE) {

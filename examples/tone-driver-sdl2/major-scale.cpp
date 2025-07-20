@@ -14,7 +14,7 @@ const int MAJOR_SCALE_INTERVALS[] = {2, 2, 1, 2, 2, 2, 1};
 
 void playMajorScale(ToneDriver& driver, NoteName root, int startOctave, int octaves = 1)
 {
-    int note = root;
+    int note = int(root);
     int octave = startOctave;
 
     // Complete multiple octaves of the scale
@@ -24,12 +24,12 @@ void playMajorScale(ToneDriver& driver, NoteName root, int startOctave, int octa
         for (int i = 0; i < sizeof(MAJOR_SCALE_INTERVALS)/sizeof(MAJOR_SCALE_INTERVALS[0]); ++i)
         {
             // Play the note
-            std::cout << "Playing Note " << toString(static_cast<NoteName>(note)) << " Octave " << octave << std::endl;
+            std::cout << "Playing Note " << noteNameToString(static_cast<NoteName>(note)) << " Octave " << octave << std::endl;
             driver.playNote(static_cast<NoteName>(note % NOTES_PER_OCTAVE), octave, NOTE_DURATION_MS);
             driver.rest(REST_DURATION_MS); 
             
             // And then increment the note by the given interval (wrap around)
-            if(note + MAJOR_SCALE_INTERVALS[i] > NoteName::B)
+            if(note + MAJOR_SCALE_INTERVALS[i] > int(NoteName::B))
             {
                 note = (note + MAJOR_SCALE_INTERVALS[i]) % NOTES_PER_OCTAVE;
                 octave++;
@@ -42,7 +42,7 @@ void playMajorScale(ToneDriver& driver, NoteName root, int startOctave, int octa
     }
     
     // Play the highest note of the scale
-    std::cout << "Playing Note " << toString(static_cast<NoteName>(note)) << " Octave " << octave << std::endl;
+    std::cout << "Playing Note " << noteNameToString(static_cast<NoteName>(note)) << " Octave " << octave << std::endl;
     driver.playNote(static_cast<NoteName>(note % NOTES_PER_OCTAVE), octave, NOTE_DURATION_MS);
     driver.rest(REST_DURATION_MS);
 
@@ -53,7 +53,7 @@ void playMajorScale(ToneDriver& driver, NoteName root, int startOctave, int octa
         for (int i = sizeof(MAJOR_SCALE_INTERVALS)/sizeof(MAJOR_SCALE_INTERVALS[0]) - 1; i >= 0; --i)
         {
             // Decrement the note by the given interval (wrap around)
-            if(note - MAJOR_SCALE_INTERVALS[i] < NoteName::C)
+            if(note - MAJOR_SCALE_INTERVALS[i] < int(NoteName::C))
             {
                 note = ((note - MAJOR_SCALE_INTERVALS[i]) + NOTES_PER_OCTAVE) % NOTES_PER_OCTAVE;
                 octave--;
@@ -64,7 +64,7 @@ void playMajorScale(ToneDriver& driver, NoteName root, int startOctave, int octa
             }
 
             // And play the note
-            std::cout << "Playing Note " << toString(static_cast<NoteName>(note)) << " Octave " << octave << std::endl;
+            std::cout << "Playing Note " << noteNameToString(static_cast<NoteName>(note)) << " Octave " << octave << std::endl;
             driver.playNote(static_cast<NoteName>(note%NOTES_PER_OCTAVE), octave, NOTE_DURATION_MS);
             driver.rest(REST_DURATION_MS); 
         }
@@ -81,10 +81,10 @@ int main()
     toneDriver.setAmplitude(0.5);
 
     // Play each of the 12 major scales 
-    for (int root = NoteName::C; root <= NoteName::B; ++root)
+    for (int root = int(NoteName::C); root <= int(NoteName::B); ++root)
     {
         std::cout << "-------------------------------------------------\n\n";
-        std::cout << "*** " << toString(static_cast<NoteName>(root)) << " Major Scale ***\n";
+        std::cout << "*** " << noteNameToString(static_cast<NoteName>(root)) << " Major Scale ***\n";
         playMajorScale(toneDriver, static_cast<NoteName>(root), START_OCTAVE, NO_OF_OCTAVES);
         toneDriver.rest(REST_BETWEEN_SCALES_MS); 
     }

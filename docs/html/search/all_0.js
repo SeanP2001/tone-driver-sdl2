@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['default_5farpeggio_5fdelay_5fms_0',['DEFAULT_ARPEGGIO_DELAY_MS',['../classToneDriver.html#a9f6fe105c4866c9cb8d2ff28eef9308f',1,'ToneDriver']]],
-  ['default_5fnote_5fduration_5fms_1',['DEFAULT_NOTE_DURATION_MS',['../classToneDriver.html#ac97971e2002c4fe2eb0fd7edcf6d44b8',1,'ToneDriver']]]
+  ['change_0',['change',['../classNote.html#ae38f836d5c99b3e9e8985f472656c51c',1,'Note']]],
+  ['chord_1',['Chord',['../classChord.html',1,'']]],
+  ['chord_2ecpp_2',['Chord.cpp',['../Chord_8cpp.html',1,'']]],
+  ['chord_2eh_3',['Chord.h',['../Chord_8h.html',1,'']]]
 ];

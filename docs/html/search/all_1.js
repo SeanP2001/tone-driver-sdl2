@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['isvalidnote_0',['isValidNote',['../classToneDriverSDL2.html#a6eeb1f0cb35358fcad835a95385b3db3',1,'ToneDriverSDL2::isValidNote()'],['../classToneDriver.html#a8eb04ab0a4c2a2b24e5a936e26144a3b',1,'ToneDriver::isValidNote()']]]
+  ['default_5farpeggio_5fdelay_5fms_0',['DEFAULT_ARPEGGIO_DELAY_MS',['../classToneDriver.html#a9f6fe105c4866c9cb8d2ff28eef9308f',1,'ToneDriver']]],
+  ['default_5fnote_5fduration_5fms_1',['DEFAULT_NOTE_DURATION_MS',['../classToneDriver.html#ac97971e2002c4fe2eb0fd7edcf6d44b8',1,'ToneDriver']]]
 ];
