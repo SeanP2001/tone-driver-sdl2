@@ -68,7 +68,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Chord.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -77,6 +78,7 @@ $(function() {
   
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &quot;<a class="el" href="Note_8h_source.html">music-components/Note.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -84,12 +86,12 @@ Include dependency graph for Chord.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="Chord_8h__incl.png" border="0" usemap="#ainclude_2music-components_2Chord_8h" alt=""/></div>
 <map name="ainclude_2music-components_2Chord_8h" id="ainclude_2music-components_2Chord_8h">
-<area shape="rect" title="Definition of the Chord class." alt="" coords="5,5,203,47"/>
-<area shape="rect" title=" " alt="" coords="65,169,135,196"/>
-<area shape="rect" title=" " alt="" coords="74,95,134,121"/>
-<area shape="rect" href="Note_8h.html" title="Definition of the Note class which represents a musical note with a pitch class and octave." alt="" coords="158,95,351,121"/>
-<area shape="rect" title=" " alt="" coords="171,169,232,196"/>
-<area shape="rect" href="NoteName_8h.html" title="Definition of the NoteName enum." alt="" coords="256,169,360,196"/>
+<area shape="rect" title="Definition of the Chord class." alt="" coords="131,5,329,47"/>
+<area shape="rect" title=" " alt="" coords="5,169,76,196"/>
+<area shape="rect" title=" " alt="" coords="253,169,314,196"/>
+<area shape="rect" title=" " alt="" coords="336,95,396,121"/>
+<area shape="rect" href="Note_8h.html" title="Definition of the Note class which represents a musical note with a pitch class and octave." alt="" coords="67,95,260,121"/>
+<area shape="rect" href="NoteName_8h.html" title="Definition of the NoteName enum." alt="" coords="111,169,215,196"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -97,8 +99,12 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="Chord_8h__dep__incl.png" border="0" usemap="#ainclude_2music-components_2Chord_8hdep" alt=""/></div>
 <map name="ainclude_2music-components_2Chord_8hdep" id="ainclude_2music-components_2Chord_8hdep">
-<area shape="rect" title="Definition of the Chord class." alt="" coords="5,5,203,47"/>
-<area shape="rect" href="Chord_8cpp.html" title="Implementation of the Chord class." alt="" coords="19,95,189,136"/>
+<area shape="rect" title="Definition of the Chord class." alt="" coords="282,5,479,47"/>
+<area shape="rect" href="MusicDriver_8h.html" title="Definition of the MusicDriver functions which allow higher level music component objects to be played..." alt="" coords="210,95,365,136"/>
+<area shape="rect" href="Chord_8cpp.html" title="Implementation of the Chord class." alt="" coords="389,95,559,136"/>
+<area shape="rect" href="music-driver_2major-scale_8cpp.html" title="Plays a major scale via MusicDriver." alt="" coords="5,184,177,225"/>
+<area shape="rect" href="note-test_8cpp.html" title="An example of how to play higher&#45;level Note objects via the MusicDriver." alt="" coords="201,184,373,225"/>
+<area shape="rect" href="MusicDriver_8cpp.html" title="Implementation of the MusicDriver functions which allow higher level music component objects to be pl..." alt="" coords="398,191,633,218"/>
 </map>
 </div>
 </div>
@@ -126,11 +132,53 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:af89e89c1254ac8cd8cf69e44cab0488a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a52670d98b9de84be489f6cb7c24bbc37"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Chord_8h.html#a52670d98b9de84be489f6cb7c24bbc37">chordTypeToString</a> (ChordType chordType)</td></tr>
+<tr class="memdesc:a52670d98b9de84be489f6cb7c24bbc37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a ChordType enum to a const char* string literal.  <a href="Chord_8h.html#a52670d98b9de84be489f6cb7c24bbc37">More...</a><br /></td></tr>
+<tr class="separator:a52670d98b9de84be489f6cb7c24bbc37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Definition of the <a class="el" href="classChord.html">Chord</a> class. <br  />
  </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a52670d98b9de84be489f6cb7c24bbc37" name="a52670d98b9de84be489f6cb7c24bbc37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52670d98b9de84be489f6cb7c24bbc37">&#9670;&nbsp;</a></span>chordTypeToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * chordTypeToString </td>
+          <td>(</td>
+          <td class="paramtype">ChordType&#160;</td>
+          <td class="paramname"><em>chordType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a ChordType enum to a const char* string literal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chordType</td><td>The ChordType enum value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a string literal representing the chord type (e.g. Major, Minor...). </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4

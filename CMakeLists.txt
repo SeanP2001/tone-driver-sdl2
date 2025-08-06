@@ -38,21 +38,29 @@ target_link_libraries(tone-driver-sdl2 PUBLIC tone-driver ${SDL2_LIBRARIES})
 
 # === Examples ===
 
-# Example: major-scale
+# Example: tone-driver-sdl2/major-scale
 add_executable(major-scale examples/tone-driver-sdl2/major-scale.cpp)
 target_link_libraries(major-scale PRIVATE tone-driver-sdl2)
 
-# Example: test-tone
+# Example: tone-driver-sdl2/test-tone
 add_executable(test-tone examples/tone-driver-sdl2/test-tone.cpp)
 target_link_libraries(test-tone PRIVATE tone-driver-sdl2)
 
-# Example: test-frequencies
+# Example: tone-driver-sdl2/test-frequencies
 add_executable(test-frequencies examples/tone-driver-sdl2/test-frequencies.cpp)
 target_link_libraries(test-frequencies PRIVATE tone-driver-sdl2)
 
-# Example: precomputed-frequencies
+# Example: tone-driver-sdl2/precomputed-frequencies
 add_executable(precomputed-frequencies examples/tone-driver-sdl2/precomputed-frequencies.cpp)
 target_link_libraries(precomputed-frequencies PRIVATE tone-driver-sdl2)
+
+# Example: music-driver/note-test
+add_executable(note-test
+    examples/music-driver/note-test.cpp
+    src/music-driver/MusicDriver.cpp
+    src/music-components/Note.cpp
+)
+target_link_libraries(note-test PRIVATE tone-driver-sdl2)
 
 # Install (optional, for later)
 # install(TARGETS tone-driver-sdl2 DESTINATION lib)

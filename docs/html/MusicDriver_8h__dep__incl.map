@@ -1,0 +1,6 @@
+<map id="include/music&#45;driver/MusicDriver.h" name="include/music&#45;driver/MusicDriver.h">
+<area shape="rect" id="node1" title="Definition of the MusicDriver functions which allow higher level music component objects to be played..." alt="" coords="210,5,365,47"/>
+<area shape="rect" id="node2" href="$music-driver_2major-scale_8cpp.html" title="Plays a major scale via MusicDriver." alt="" coords="5,95,177,136"/>
+<area shape="rect" id="node3" href="$note-test_8cpp.html" title="An example of how to play higher&#45;level Note objects via the MusicDriver." alt="" coords="201,95,373,136"/>
+<area shape="rect" id="node4" href="$MusicDriver_8cpp.html" title="Implementation of the MusicDriver functions which allow higher level music component objects to be pl..." alt="" coords="398,102,633,129"/>
+</map>
