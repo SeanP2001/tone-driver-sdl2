@@ -6,11 +6,11 @@
 
 #include "tone-driver/ToneDriver.h" 
 #include "music-components/Note.h"
-#include "music-components/NoteEvent.h"
-#include "music-components/Chord.h"
-#include "music-components/ChordEvent.h"
-#include "music-components/Key.h"
-#include "music-components/Scale.h"
+//#include "music-components/NoteEvent.h"
+//#include "music-components/Chord.h"
+//#include "music-components/ChordEvent.h"
+//#include "music-components/Key.h"
+//#include "music-components/Scale.h"
  
 /**
  * @brief Plays a Note object via a ToneDriver for a given duration.
