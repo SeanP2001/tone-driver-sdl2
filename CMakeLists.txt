@@ -54,6 +54,10 @@ target_link_libraries(test-frequencies PRIVATE tone-driver-sdl2)
 add_executable(precomputed-frequencies examples/tone-driver-sdl2/precomputed-frequencies.cpp)
 target_link_libraries(precomputed-frequencies PRIVATE tone-driver-sdl2)
 
+# Example: tone-driver-sdl2/chord-scale
+add_executable(chord-scale examples/tone-driver-sdl2/chord-scale.cpp)
+target_link_libraries(chord-scale PRIVATE tone-driver-sdl2)
+
 # Example: music-driver/note-test
 add_executable(note-test
     examples/music-driver/note-test.cpp

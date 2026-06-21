@@ -1,0 +1,12 @@
+digraph "build/CMakeFiles/tone-driver-sdl2.dir/src/tone-driver-sdl2"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_b0a0447aa1d84286cdc8ac3511576d3a {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="src", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_b0a0447aa1d84286cdc8ac3511576d3a.html",tooltip=""]
+  dir_d61a4f3f984b8117ad339ea8e3bf8194 [label="tone-driver-sdl2", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_d61a4f3f984b8117ad339ea8e3bf8194.html",tooltip=""];
+  }
+}

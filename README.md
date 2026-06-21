@@ -51,16 +51,28 @@ make
 ```
 
 ## Integration
+
 Replace the Sound::note method in your game code with the SDL2 implementation for PC testing without hardware.
 
 ## Dependencies
+
 SDL2 library (https://www.libsdl.org/)
+
+**Linux** 
 
 Install by running the following command:
 
 ```bash
 sudo apt install libsdl2-dev
 ```
+
+**macOS**
+
+1. Download the dmg file from the [v2.32.10 release on GitHub](https://github.com/libsdl-org/SDL/releases/download/release-2.32.10/SDL2-2.32.10.dmg)
+   
+2. Copy the SDL2.framework directory from the download to /Library/Frameworks
+
+3. When running Apple may block SDL2 due to the OS not being able to confirm it is free from malware. To bypass this, go to System Settings > Privacy & Security and click 'Open Anyway'.
 
 ## Documentation
 

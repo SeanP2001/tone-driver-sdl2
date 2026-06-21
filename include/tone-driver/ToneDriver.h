@@ -132,7 +132,7 @@ public:
 
 
 protected:
-    static constexpr int DEFAULT_CHORD_ARPEGGIO_DELAY_MS = 10; /// Delay between notes when using an arpeggio to simulate playing a chord
+    static constexpr int DEFAULT_CHORD_ARPEGGIO_DELAY_MS = 25; /// Delay between notes when using an arpeggio to simulate playing a chord
     static constexpr int DEFAULT_NOTE_DURATION_MS = 100;       /// Default note duration
     static constexpr int DEFAULT_ARPEGGIO_DELAY_MS = 100;      /// Delay between notes in an arpeggio
     static constexpr int MAX_POLYPHONY = 5;                    /// Maximum number of notes supported in a chord or arpeggio

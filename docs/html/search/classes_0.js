@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['chord_0',['Chord',['../classChord.html',1,'']]]
+  ['note_0',['Note',['../classNote.html',1,'']]]
 ];

@@ -1,0 +1,17 @@
+digraph "examples"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_d28a4824dc47e487b107a5db32ef43c4 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_d28a4824dc47e487b107a5db32ef43c4.html",tooltip=""]
+    dir_d28a4824dc47e487b107a5db32ef43c4 [shape=plaintext, label="examples"];
+  dir_f34577ee9aad7b1fff7057af938f2e80 [label="music-driver", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_f34577ee9aad7b1fff7057af938f2e80.html",tooltip=""];
+  dir_516e9b4fcb7b2f323fde73f2b6250c36 [label="tone-driver-sdl2", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_516e9b4fcb7b2f323fde73f2b6250c36.html",tooltip=""];
+  }
+  dir_d44c64559bbebec7f509842c48db8b23 [label="include", fillcolor="#edf0f7", color="red", style="filled", URL="dir_d44c64559bbebec7f509842c48db8b23.html",tooltip=""];
+  dir_f34577ee9aad7b1fff7057af938f2e80->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="2", labeldistance=1.5 headhref="dir_000016_000012.html" href="dir_000016_000012.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_516e9b4fcb7b2f323fde73f2b6250c36->dir_d44c64559bbebec7f509842c48db8b23 [headlabel="5", labeldistance=1.5 headhref="dir_000031_000012.html" href="dir_000031_000012.html" color="steelblue1" fontcolor="steelblue1"];
+}

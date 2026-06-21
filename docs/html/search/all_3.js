@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['isvalidnote_0',['isValidNote',['../classNote.html#a6fd7e116e64af72c835b34587baf958c',1,'Note::isValidNote()'],['../classToneDriverSDL2.html#a6eeb1f0cb35358fcad835a95385b3db3',1,'ToneDriverSDL2::isValidNote()'],['../classToneDriver.html#a8eb04ab0a4c2a2b24e5a936e26144a3b',1,'ToneDriver::isValidNote()']]]
+  ['getnotename_0',['getNoteName',['../classNote.html#a8ca8fad31e8fc5e5216827cec67a8c50',1,'Note']]],
+  ['getnotenamestring_1',['getNoteNameString',['../classNote.html#ab5ea5ae7cb641df9c9a4e550d6796a1b',1,'Note']]],
+  ['getoctave_2',['getOctave',['../classNote.html#a3f49713286432279c2b937563e1e980a',1,'Note']]]
 ];
