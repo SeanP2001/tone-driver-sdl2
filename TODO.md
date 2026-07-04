@@ -1,7 +1,7 @@
 ### Core ToneDriver
 
 - [ ] arpeggio-scale Example
-- [ ] minor-scale Example
+- [x] minor-scale Example
 - [ ] music-loop Example
 
 ### Music Components

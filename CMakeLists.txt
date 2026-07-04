@@ -42,6 +42,10 @@ target_link_libraries(tone-driver-sdl2 PUBLIC tone-driver ${SDL2_LIBRARIES})
 add_executable(major-scale examples/tone-driver-sdl2/major-scale.cpp)
 target_link_libraries(major-scale PRIVATE tone-driver-sdl2)
 
+# Example: tone-driver-sdl2/minor-scale
+add_executable(minor-scale examples/tone-driver-sdl2/minor-scale.cpp)
+target_link_libraries(minor-scale PRIVATE tone-driver-sdl2)
+
 # Example: tone-driver-sdl2/test-tone
 add_executable(test-tone examples/tone-driver-sdl2/test-tone.cpp)
 target_link_libraries(test-tone PRIVATE tone-driver-sdl2)
